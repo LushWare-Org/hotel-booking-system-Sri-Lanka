@@ -1,0 +1,36 @@
+.hm-experience {
+  width: 100%;
+  padding: 20px;
+  background-color: #FFF3E6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-section {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+}
+
+.gallery-image:hover {
+  transform: scale(1.08);
+}
+
+.gallery-grid {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.gallery-grid.gallery-animate {
+  opacity: 1;
+  transform: translateY(0);
+}

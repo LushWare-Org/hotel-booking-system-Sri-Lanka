@@ -1,0 +1,135 @@
+.experience-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 10px;
+  background-color: #FCECD8;
+}
+
+.experience-block {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 60px;
+  margin-top: -30px;
+  transform: translateX(50px); 
+  opacity: 0;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.block-0 { width: 23%; height: 500px; transition-delay: 0.1s; }
+.block-1 { width: 23%; height: 500px; transition-delay: 0.2s; }
+.block-2 { width: 23%; height: 500px; transition-delay: 0.3s; }
+.block-3 { width: 23%; height: 500px; transition-delay: 0.4s; }
+
+.experience-block.in-view {
+  transform: translateX(0); 
+  opacity: 1;
+}
+
+.experience-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.experience-image:hover {
+  transform: scale(1.05);
+}
+
+.experience-image h2 {
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  left: 20px;
+  color: white;
+  font-size: 2rem;
+  margin: 0;
+  z-index: 1;
+  padding: 25px 10px;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  padding: 20px;
+  margin-left: 0px;
+  margin-bottom: 5px;
+}
+
+.hover-overlay p,
+.hover-overlay .discover-button {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.experience-image:hover h2 {
+  opacity: 1;
+  transform: translateY(-160px);
+}
+
+.experience-image:hover .hover-overlay {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.experience-image:hover .hover-overlay p {
+  opacity: 1;
+  transform: translateY(-20px);
+  transition-delay: 0.1s;
+}
+
+.experience-image:hover .hover-overlay .discover-button {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+.discover-button {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  font-size: 1rem;
+  border: solid white;
+  border-width: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 25px;
+}
+
+.discover-button:hover {
+  background-color: white;
+  transform: scale(1.05);
+  color:#ff8c00;
+  border: solid rgb(32, 7, 145);
+  border-width: 1px;
+}

@@ -1,0 +1,175 @@
+.login-container {
+    display: flex;
+    height: 100vh;
+    background-color: white;
+  }
+  
+  .login-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin-left: 45px;
+    margin-right: 25px;
+    margin-top: 75px;
+    height: calc(100% - 140px);
+    overflow: hidden;
+    width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  .login-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin-top: 45px;
+    margin-right: 25px;
+    width: 800px;
+  }
+  
+  .login-formContainer {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .login-logo {
+    font-size: 30px;
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  .login-heading {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .login-subtext {
+    color: #6b6b6b;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .login-input {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .login-passwordField {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .login-icon {
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+    color: #888;
+  }
+  
+  .login-loginButton {
+    width: 100%;
+    padding: 14px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.3s;
+  }
+  
+  .login-loginButton:hover {
+    background-color: #333;
+    transform: scale(1.03);
+  }
+  
+  .login-login-center-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .login-remember-div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-forgot-pass-link {
+    color: #007bff;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .login-forgot-pass-link:hover {
+    text-decoration: underline;
+  }
+  
+  .login-googleButton {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #6b6b6b;
+    transition: transform 0.2s, background-color 0.3s;
+  }
+  
+  .login-googleButton:hover {
+    background-color: #e8e8e8;
+    transform: scale(1.03);
+  }
+  
+  .login-facebookButton {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    background-color: #3b5998;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.2s, background-color 0.3s;
+  }
+  
+  .login-facebookButton:hover {
+    background-color: #324b84;
+    transform: scale(1.03);
+  }
+  
+  .login-socialIcon {
+    width: 20px;
+    margin-right: 10px;
+  }
+  
+  .login-link {
+    color: #6b6b6b;
+    text-decoration: none;
+    font-size: 14px;
+  }
